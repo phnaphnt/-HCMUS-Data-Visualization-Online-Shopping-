@@ -55,8 +55,3 @@ WITH
     FIRSTROW = 2,
     TABLOCK
 );
-
--- Use BULK INSERT FROM CSV FILE
--- INSERT INTO [ORDER] (TotalPrice)
--- VALUES
-  

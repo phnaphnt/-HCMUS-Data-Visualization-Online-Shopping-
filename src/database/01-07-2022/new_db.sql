@@ -125,15 +125,6 @@ CREATE TABLE VENDOR_TO_CATEGORY (
     FOREIGN KEY (CategoryID) REFERENCES CATEGORY(ID),
 );
 
-CREATE TABLE VENDOR_FEE (
-    VendorID varchar(36) not null,
-    Month int not null,
-    Year int not null,
-    Fee decimal not null,
-    CONSTRAINT PK_VENDOR_FEE PRIMARY KEY (VendorID, Month, Year),
-    FOREIGN KEY (VendorID) REFERENCES VENDOR(ID),
-);
-
 CREATE TABLE PRODUCT (
     ID varchar(36) not null primary key,
     CategoryID varchar(36),
